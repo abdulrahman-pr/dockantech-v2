@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DockanTech</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9f9aff05b4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="container d-flex">
+        <div class="menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="mobile-menu" id="mob">
+          <div class="close-btn">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="search-menu">
+            <input type="text" placeholder="search" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="mob-links">
+            <ul>
+              <li><a href="">openbox</a></li>
+              <li>
+                <a href="">computer accessories</a>
+                <i class="fa-solid fa-chevron-down"></i>
+              </li>
+              <!-- Dropdown -->
+              <div class="dropdown">
+                <li>
+                  <a href="">mouse</a>
+                </li>
+                <li>
+                  <a href="">keyborad</a>
+                </li>
+                <li>
+                  <a href="">mouse & keyborad(combo)</a>
+                </li>
+                <li>
+                  <a href="">pad</a>
+                </li>
+                <li>
+                  <a href="">speakers</a>
+                </li>
+                <li>
+                  <a href="">hub</a>
+                </li>
+              </div>
+              <li>
+                <a href="">network</a>
+                <i class="fa-solid fa-chevron-down"></i>
+              </li>
+              <li>
+                <a href="">headphones and speakers</a>
+                <i class="fa-solid fa-chevron-down"></i>
+              </li>
+              <li>
+                <a href="">chargers and cables</a>
+                <i class="fa-solid fa-chevron-down"></i>
+              </li>
+              <li>
+                <a href="">gaming accessories</a>
+                <i class="fa-solid fa-chevron-down"></i>
+              </li>
+              <li>
+                <a href="">gaming headsets</a>
+                <i class="fa-solid fa-chevron-down"></i>
+              </li>
+              <li><a href="">wearables</a></li>
+              <li>
+                <a href="">smart home</a>
+                <i class="fa-solid fa-chevron-down"></i>
+              </li>
+              <li><a href="">new arrivals</a></li>
+              <li><a href="">last piece</a></li>
+              <li><a href="">wishlist(0)</a></li>
+              <li><a href="">login/register</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="logo">
+          <img src="images/dokkantech-logo_200x@2x.avif" alt="" />
+        </div>
+        <form action="">
+          <div class="search-bar d-flex">
+            <select name="" id="categories">
+              <option value="all categories">all categories</option>
+              <option value="buds">buds</option>
+              <option value="cable">cable</option>
+              <option value="earbuds">earbuds</option>
+              <option value="watch">watch</option>
+            </select>
+            <input
+              type="text"
+              class="search"
+              placeholder="search for products"
+            />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </form>
+        <div class="header-right d-flex">
+          <nav class="log">
+            <i class="fa-solid fa-user"></i>
+            <div class="log-text">
+              <span class="st-span">login</span>
+              <span class="nd-span">login / register</span>
+            </div>
+          </nav>
+          <!-- <div>
+
+                </div> -->
+          <nav class="wishlist">
+            <i class="fa-solid fa-heart">
+              <span class="b-point">0</span>
+            </i>
+            <div class="wishlist-text">
+              <span class="st-span">favourite</span>
+              <span class="nd-span">my wishlist</span>
+            </div>
+          </nav>
+          <!-- <div></div> -->
+          <nav class="cart">
+            <i class="fa-solid fa-cart-shopping" id="r-col">
+              <span class="b-point" id="num">0</span>
+            </i>
+            <div class="cart-text">
+              <span class="st-span">your cart</span>
+              <span class="nd-span">le 0.00</span>
+            </div>
+          </nav>
+          <aside class="one">
+            <div class="aside-header d-flex">
+              <div class="left">
+                <span>shopping cart</span>
+                <!-- <span class="b-point">0</span> -->
+              </div>
+              <div class="close-cart">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+            </div>
+            <div class="aside-body">
+              <img
+                src="images/wired-flat-146-basket-trolley-shopping-card.gif"
+                alt=""
+              />
+              <p>your cart is empty</p>
+              <div class="btn">return to shop</div>
+            </div>
+            <div class="cart-products">
+              <!-- emptyy -->
+            </div>
+            <div class="aside-bottom">
+              <div class="aside-check">
+                <div class="chk-top d-flex">
+                  <span>total</span>
+                  <span>le 0.00</span>
+                </div>
+                <div class="cart-btns">
+                  <div class="btn">view cart</div>
+                  <div class="btn">check out</div>
+                </div>
+              </div>
+              <div class="aside-footer">
+                <p>Spend LE 1,500.00 to Free Shipping</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </header>
+    <div class="header-bottom">
+      <div class="links">
+        <ul>
+          <li class="open-box-main">
+            <a href="">open box</a>
+            <span class="open-box">save $</span>
+          </li>
+
+          <li><a href="">computer accessories</a></li>
+          <li><a href="">smart phones & accessories</a></li>
+          <li><a href="">gaming</a></li>
+          <li><a href="">wearables</a></li>
+          <li><a href="">smart home</a></li>
+          <li class="new-main">
+            <a href="">new arrivals</a>
+            <span class="new"
+              >new<i
+                class="fa-solid fa-volume-high"
+                style="margin-left: 12px"
+              ></i
+            ></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="fixed-header">
+      <ul class="d-flex">
+        <li>
+          <i class="fa-solid fa-house"></i>
+        </li>
+        <li>
+          <i class="fa-solid fa-shop"></i>
+        </li>
+        <li class="point">
+          <i class="fa-solid fa-heart"></i>
+        </li>
+        <li class="point" id="cart-fix">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </li>
+        <li>
+          <i class="fa-solid fa-user"></i>
+        </li>
+      </ul>
+    </div>
+    <section class="hero">
+      <div class="container">
+        <div class="slider">
+          <img src="images/sam-hero.png" alt="" />
+          <div class="pointer">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="sponsers">
+          <img src="images/redragon.png" alt="" />
+          <img src="images/logitech-hero.png" class="logitech" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="shop-fast">
+      <div class="container">
+        <div class="col d-flex">
+          <div class="col-text">
+            <h4>gaming consoles & gamepads</h4>
+            <div class="shop-btn">
+              <span>shop now</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="col-img">
+            <img src="images/shop-fast-gamepad.png" alt="" />
+          </div>
+        </div>
+        <div class="col d-flex active">
+          <div class="col-text">
+            <h4>gadgets and accessories</h4>
+            <div class="shop-btn">
+              <span>shop now</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="col-img">
+            <img src="images/shop-fast-key.png" alt="" />
+          </div>
+        </div>
+        <div class="col d-flex">
+          <div class="col-text">
+            <h4>smart watch</h4>
+            <div class="shop-btn">
+              <span>shop now</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="col-img">
+            <img src="images/shop-fast-watch.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="brands">
+      <div class="container">
+        <div>
+          <img src="images/SanDisk_Logo_180x.png_v=1661873636" alt="" />
+          <img src="images/Apple-logo_540x.png_v=1661874446" alt="" />
+          <img
+            src="images/Anker_logo.svg_60e5755d-9967-4355-af71-c39aa7079b1c_540x.png_v=1661873847"
+            alt=""
+          />
+          <img
+            src="images/amazfit-logo_cca3f1a8-b542-49b3-8532-0d4dc0f9230b_540x.png_v=1661874016"
+            alt=""
+          />
+          <img
+            src="images/astro-gaming-vector-logo_540x.png_v=1661873635"
+            alt=""
+          />
+          <img src="images/xiaomi-changes-logo_540x.png_v=1661874264" alt="" />
+          <img
+            src="images/astro-gaming-vector-logo_540x.png_v=1661873635"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <section class="bestseller">
+      <div class="container">
+        <div class="head">
+          <h2>best seller</h2>
+        </div>
+        <div class="products">
+          <div class="product">
+            <div class="shortcuts">
+              <i class="fa-regular fa-eye"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-cart-plus"></i>
+            </div>
+            <div class="product-img">
+              <img
+                src="images/LogitechM171WirelessMouse-01_360x.png_v=1656235243"
+                alt=""
+              />
+              <span class="instockornot">in stock</span>
+            </div>
+            <span class="prouct-details">logitech mouse m171 wireless</span>
+            <span class="product-price">le 100</span>
+            <div class="btn">
+              <span>add to cart</span>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="shortcuts">
+              <i class="fa-regular fa-eye"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-cart-plus"></i>
+            </div>
+            <div class="overlay"></div>
+            <div class="product-img">
+              <img
+                src="images/LogitechG102LightSyncGamongMouseBlack-01_360x.jpg_v=1656156131"
+                alt=""
+              />
+              <span class="instockornot">in stock</span>
+            </div>
+            <span class="prouct-details">info info info info info info</span>
+            <span class="product-price">le 100</span>
+            <div class="btn">
+              <span>add to cart</span>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="shortcuts">
+              <i class="fa-regular fa-eye"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-cart-plus"></i>
+            </div>
+            <div class="product-img">
+              <img
+                src="images/Untitleddesign_2_f2cf3192-c05c-4bdc-93be-450aac7f33b4_360x.png_v=1681399641"
+                alt=""
+              />
+              <span class="instockornot">in stock</span>
+            </div>
+            <span class="prouct-details">info info info info info info</span>
+            <span class="product-price">le 100</span>
+            <div class="btn">
+              <span>add to cart</span>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="shortcuts">
+              <i class="fa-regular fa-eye"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-cart-plus"></i>
+            </div>
+            <div class="product-img">
+              <img
+                src="images/LogitechM171WirelessMouse-01_360x.png_v=1656235243"
+                alt=""
+              />
+              <span class="instockornot">in stock</span>
+            </div>
+            <span class="prouct-details">info info info info info info</span>
+            <span class="product-price">le 100</span>
+            <div class="btn">
+              <span>add to cart</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="phone">
+      <div class="container">
+        <div class="phone-text">
+          <h1>incredible features &<br />fresh mobile accessories</h1>
+          <div class="phone-btn">
+            <span>check products</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="new-arrivals">
+      <div class="container">
+        <div class="head">
+          <h2>new arrivals</h2>
+        </div>
+        <div class="products">
+          <div class="product">
+            <div class="shortcuts">
+              <i class="fa-regular fa-eye"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-cart-plus"></i>
+            </div>
+            <div class="product-img">
+              <img
+                src="images/USB-IF-certifiedefficiencychargeyourSamsungS23to58_injust30minuteswitha30Wcharger_whiletheUSB-IFcertificationensuresareliableandefficientchargingexperience.ENERGYFORA_6_360x.png_v=1700316606"
+                alt=""
+              />
+              <span class="instockornot">in stock</span>
+            </div>
+            <span class="prouct-details">logitech mouse m171 wireless</span>
+            <span class="product-price">le 100</span>
+            <div class="btn">
+              <span>add to cart</span>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="shortcuts">
+              <i class="fa-regular fa-eye"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-cart-plus"></i>
+            </div>
+            <div class="overlay"></div>
+            <div class="product-img">
+              <img
+                src="images/USB-IF-certifiedefficiencychargeyourSamsungS23to58_injust30minuteswitha30Wcharger_whiletheUSB-IFcertificationensuresareliableandefficientchargingexperience.ENERGYFORA_7_360x.png_v=1700316660"
+                alt=""
+              />
+              <span class="instockornot">in stock</span>
+            </div>
+            <span class="prouct-details">info info info info info info</span>
+            <span class="product-price">le 100</span>
+            <div class="btn">
+              <span>add to cart</span>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="shortcuts">
+              <i class="fa-regular fa-eye"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-cart-plus"></i>
+            </div>
+            <div class="product-img">
+              <img
+                src="images/Untitleddesign_9_36e73230-8480-4b8f-b12f-39bfbf9b0b33_360x.png_v=1700166711"
+                alt=""
+              />
+
+              <span class="instockornot">in stock</span>
+            </div>
+            <span class="prouct-details">info info info info info info</span>
+            <span class="product-price">le 100</span>
+            <div class="btn">
+              <span>add to cart</span>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="shortcuts">
+              <i class="fa-regular fa-eye"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-cart-plus"></i>
+            </div>
+            <div class="product-img">
+              <img
+                src="images/Untitleddesign_f2e68a11-5656-46ea-b193-1fd446975117_360x.png_v=1700232142"
+                alt=""
+              />
+              <span class="instockornot">in stock</span>
+            </div>
+            <span class="prouct-details">info info info info info info</span>
+            <span class="product-price">le 100</span>
+            <div class="btn">
+              <span>add to cart</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="ShopByCategories">
+      <div class="container">
+        <div class="head">
+          <h2>shop by categories</h2>
+        </div>
+
+        <div class="categories">
+          <div class="category">
+            <div class="category-img">
+              <img src="images/Headset_1_360x.png_v=1661933868" alt="" />
+            </div>
+            <div class="category-text">
+              <div class="category-head">
+                <h3>computer accessories</h3>
+                <ul>
+                  <li><a href="">mouse</a></li>
+                  <li><a href="">keyborad</a></li>
+                  <li><a href="">mouse & keyborad (combo)</a></li>
+                  <li><a href="">pad</a></li>
+                  <li><a href="">webCam</a></li>
+                  <li><a href="">speakers</a></li>
+                  <li><a href="">hub</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="category">
+            <div class="category-img">
+              <img src="images/Headset_2_360x.png_v=1661934508" alt="" />
+            </div>
+            <div class="category-text">
+              <div class="category-head">
+                <h3>headphones & speakers</h3>
+                <ul>
+                  <li><a href="">eurbuds</a></li>
+                  <li><a href="">wired headphones</a></li>
+                  <li><a href="">bluetooth speakers</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="category">
+            <div class="category-img">
+              <img src="images/Headset_3_360x.png_v=1661934735" alt="" />
+            </div>
+            <div class="category-text">
+              <div class="category-head">
+                <h3>gaming</h3>
+                <ul>
+                  <li><a href="">gaming keyborads</a></li>
+                  <li><a href="">gaming mouses</a></li>
+                  <li><a href="">gaming mousepads</a></li>
+                  <li><a href="">gaming microphones</a></li>
+                  <li><a href="">gaming controllers</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="category">
+            <div class="category-img">
+              <img src="images/Headset_5_360x.png_v=1661935857" alt="" />
+            </div>
+            <div class="category-text">
+              <div class="category-head">
+                <h3>samrt home</h3>
+                <ul>
+                  <li><a href="">led</a></li>
+                  <li><a href="">camera</a></li>
+                  <li><a href="">stream</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="category">
+            <div class="category-img">
+              <img src="images/Headset_8_360x.png_v=1661939909" alt="" />
+            </div>
+            <div class="category-text">
+              <div class="category-head">
+                <h3>network</h3>
+                <ul>
+                  <li><a href="">range extender</a></li>
+                  <li><a href="">access points</a></li>
+                  <li><a href="">cables</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="category">
+            <div class="category-img">
+              <img src="images/Headset_6_360x.png_v=1661938294" alt="" />
+            </div>
+            <div class="category-text">
+              <div class="category-head">
+                <h3>storage</h3>
+                <ul>
+                  <li><a href="">combact /SD</a></li>
+                  <li><a href="">mirco /SD</a></li>
+                  <li><a href="">reader card</a></li>
+                  <li><a href="">cfast</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="category">
+            <div class="category-img">
+              <img src="images/Headset_7_360x.png_v=1661938784" alt="" />
+            </div>
+            <div class="category-text">
+              <div class="category-head">
+                <h3>gaming headset</h3>
+                <ul>
+                  <li><a href="">wired headset</a></li>
+                  <li><a href="">wireless headset</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="category">
+            <div class="category-img">
+              <img src="images/Headset_9_360x.png_v=1661941309" alt="" />
+            </div>
+            <div class="category-text">
+              <div class="category-head">
+                <h3>chargers & cables</h3>
+                <ul>
+                  <li><a href="">chargers</a></li>
+                  <li><a href="">cables</a></li>
+                  <li><a href="">power banks</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+      <div class="container">
+        <div class="serv">
+          <div class="icon">
+            <i class="fa-solid fa-car"></i>
+          </div>
+          <div class="serv-text">
+            <span>free delivery</span>
+            <span>for all orders over 1500le in cairo & giza</span>
+          </div>
+        </div>
+
+        <div class="serv">
+          <div class="icon">
+            <i class="fa-regular fa-credit-card"></i>
+          </div>
+          <div class="serv-text">
+            <span>safe payment</span>
+            <span>100% secure payment</span>
+          </div>
+        </div>
+        <div class="serv">
+          <div class="icon">
+            <i class="fa-regular fa-comment"></i>
+          </div>
+          <div class="serv-text">
+            <span>help center</span>
+            <span>dedicated 24/6 support</span>
+          </div>
+        </div>
+        <div class="serv">
+          <div class="icon">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <div class="serv-text">
+            <span>shop with confidence</span>
+            <span>if goods have problems</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="col ">
+          <h3>about dockantech</h3>
+          <p>dockantech is a company specialized in selling elctronic accessories with scurtiny in providing only high quality products and a real guarantee.</p>
+          <div class="call-us">
+            <span>call us 24/6!</span>
+            <span>01002985186</span>
+          </div>
+          <div class="social">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+        </div>
+        <div class="col last">
+          <h3>subscribe to our newsletter</h3>
+          <p>join 5000+ subscribers and get new news</p>
+          <div class="form">
+            <form action="">
+              <input type="email" required placeholder="your email address">
+              <input type="submit" value="subscribe">
+            </form>
+          </div>
+          <p style="font-style: italic;">mail: sales@dockan-tech.com</p>
+        </div>
+        <div class="col">
+          <h3>collections</h3>
+          <ul>
+            <li><a href="">all collections</a></li>
+            <li><a href="">computer (48)</a></li>
+            <li><a href="">smart phones (9)</a></li>
+            <li><a href="">accessories (48)</a></li>
+            <li><a href="">wearables (17)</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>quick links</h3>
+          <ul>
+            <li><a href="">about us</a></li>
+            <li><a href="">contact us</a></li>
+            <li><a href="">my account</a></li>
+            <li><a href="">FAQs </a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Policies & Rules</h3>
+          <ul>
+            <li><a href="">Privacy policy</a></li>
+            <li><a href="">refund policy</a></li>
+            <li><a href="">shipping policy</a></li>
+            <li><a href="">terms & conditions</a></li>
+            
+          </ul>
+        </div>
+        
+      </div>
+    </footer>
+
+    <script>
+      let aside = document.querySelector("aside");
+      // show the aside
+      document.getElementById("r-col").addEventListener("click", function () {
+        aside.style.display = "flex";
+      });
+      // close the aside
+      document
+        .querySelector("aside .fa-xmark")
+        .addEventListener("click", function () {
+          aside.style.display = "none";
+        });
+      document
+        .getElementById("cart-fix")
+        .addEventListener("click", function () {
+          aside.style.display = "flex";
+        });
+
+      document
+        .querySelector(".fa-chevron-down")
+        .addEventListener("click", function () {
+          document.querySelector(".dropdown").classList.toggle("show");
+        });
+      document.querySelector(".fa-bars").addEventListener("click", function () {
+        document.querySelector(".mobile-menu").style.display = "block";
+      });
+      document
+        .querySelector(".close-btn")
+        .addEventListener("click", function () {
+          document.getElementById("mob").style.display = "none";
+        });
+    </script>
+  </body>
+</html>
